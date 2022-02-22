@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        
+    </div>
+
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script> 
+
+    <script>
+        var foto = React.createElement ('img', {src: './img/foto.jpg', style: {width: '200px', padding: '5px' , border: '1px solid black', borderRadius: '50%'}});
+        var h1 = React.createElement('h1', { style: {color: 'blue'} }, 'Gustavo Medeiros');
+        var h2 = React.createElement('h4', {style: {fontSize: '20px', margin: '30px'}}, 'Programador Front-End');
+        var button = React.createElement('button', {style: {borderRadius: '7px', border: 'none', backgroundColor: 'lightGrey', padding: '10px'}}, 'Saiba mais');
+        var container = React.createElement('div', { style: {border: '1px solid black', borderRadius: '10px', width: '300px', textAlign: 'center', padding: '15px', margin: '200px'}}, [foto, h1, h2, button] );
+        ReactDOM.render(container, document.getElementById('container'));
+
+    </script>
+</body>
+</html>
